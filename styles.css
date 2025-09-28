@@ -100,18 +100,41 @@
 .join-btns.one {
   background-color: #fff;
   color: #014372;
+  transition: all 0.5s ease;
+}
+.join-btns.one:hover {
+  background-color: #014372;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .join-btns.two {
   border: 1px solid #fff;
   background-color: #398cb8;
   color: #fff;
+  transition: all 0.5s ease;
+}
+.join-btns.two:hover {
+  background-color: var(--button-color);
+  border: 1px solid #014372;
 }
 
 .hero-btns.one {
   background-color: var(--button-color);
+  transition: all 0.5s ease;
+}
+.hero-btns.one:hover {
+  background-color: #fff;
+  color: var(--button-color);
 }
 .hero-btns.two {
+  transition: all 0.5s ease;
+
   background-color: var(--primary);
+  border: 1px solid #fff;
+}
+.hero-btns.two:hover {
+  background-color: #fff;
+  color: var(--button-color);
 }
 /* Media query */
 @media (max-width: 880px) {
@@ -355,10 +378,11 @@ hr {
 .polity-terms ul li a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 .polity-terms ul li a:hover,
 .footer-menu-links ul li a:hover {
-  color: red;
+  color: #1c7db2;
   text-decoration: underline #fff;
 }
 @media (max-width: 800px) {
