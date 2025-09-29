@@ -8,7 +8,9 @@
   --secondary: #62c8ee;
   --button-color: #179886;
 }
-
+body {
+  background-color: #fff;
+}
 /* header-section  start*/
 .header-section {
   width: 100%;
@@ -26,6 +28,10 @@
 }
 .header-logo {
   color: #014372;
+  transition: color 0.5s ease;
+}
+.header-logo:hover {
+  color: #fff;
 }
 
 .header-nav ul {
@@ -57,7 +63,7 @@
 }
 .hero-section {
   color: #fff;
-  margin: 6rem auto 0;
+  margin: 10rem auto 0;
   width: 50%;
   text-align: center;
 }
@@ -177,6 +183,12 @@
     margin-left: 0;
   }
 }
+
+@media (max-width: 430px) {
+  .header-section {
+    width: 100vw;
+  }
+}
 /* header-section  end*/
 
 /* Features section start */
@@ -190,9 +202,14 @@
 }
 .features-section > div > p {
   font-size: 1rem;
-  width: 500px;
+  width: 400px;
   margin: auto;
   padding: 15px 30px 30px 15px;
+}
+@media (max-width: 430px) {
+  .features-section > div > p {
+    width: 350px;
+  }
 }
 .features {
   display: flex;
@@ -240,14 +257,20 @@
 .testimonials-section h2 {
   font-size: 2rem;
   padding: 15px;
+  width: 400px;
+  margin: auto;
 }
 .testimonials-section > div > p {
   font-size: 1rem;
-  width: 500px;
+  width: 400px;
   margin: auto;
   padding: 15px 30px 30px 15px;
 }
-
+@media (max-width: 430px) {
+  .testimonials-section > div > p {
+    width: 300px;
+  }
+}
 .testimonials {
   display: flex;
   gap: 20px;
@@ -317,6 +340,11 @@
   background-color: #014372;
   padding: 40px;
   color: #fff;
+}
+@media (max-width: 430px) {
+  .footer {
+    width: 100%;
+  }
 }
 .footer-menu {
   display: flex;
