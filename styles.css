@@ -7,6 +7,8 @@
   --primary: #398cb8;
   --secondary: #62c8ee;
   --button-color: #179886;
+  --deep-primary-color: #014372;
+  --primary-icon-colo: #1c7db2;
 }
 body {
   background-color: #fff;
@@ -27,7 +29,7 @@ body {
   width: 89%;
 }
 .header-logo {
-  color: #014372;
+  color: var(--deep-primary-color);
   transition: color 0.5s ease;
 }
 .header-logo:hover {
@@ -49,7 +51,7 @@ body {
   background-color: var(--secondary);
   border-radius: 5px;
   padding: 5px 9px;
-  color: #014372;
+  color: var(--deep-primary-color);
   transition: all 0.5s;
 }
 .get-started:hover {
@@ -105,11 +107,11 @@ body {
 }
 .join-btns.one {
   background-color: #fff;
-  color: #014372;
+  color: var(--deep-primary-color);
   transition: all 0.5s ease;
 }
 .join-btns.one:hover {
-  background-color: #014372;
+  background-color: var(--deep-primary-color);
   color: #fff;
   border: 1px solid #fff;
 }
@@ -121,7 +123,7 @@ body {
 }
 .join-btns.two:hover {
   background-color: var(--button-color);
-  border: 1px solid #014372;
+  border: 1px solid var(--deep-primary-color);
 }
 
 .hero-btns.one {
@@ -229,7 +231,7 @@ body {
   color: #fff;
 }
 .primary {
-  background-color: #1c7db2;
+  background-color: var(--primary-icon-colo);
 }
 .secondary {
   background-color: #40aa92;
@@ -294,7 +296,7 @@ body {
   gap: 10px;
 }
 .customer > div > h3 {
-  background-color: #1c7db2;
+  background-color: var(--primary-icon-colo);
   border-radius: 100%;
   padding: 8px;
   font-size: 0.8rem;
@@ -317,21 +319,21 @@ body {
   color: #fff;
 }
 .trial:hover {
-  background-color: #1c7db2;
+  background-color: var(--primary-icon-colo);
   color: #fff;
 }
 .demo {
   border: 1px solid;
-  background-color: #1c7db2;
+  background-color: var(--primary-icon-colo);
 }
 .demo:hover {
-  background-color: #014372;
+  background-color: var(--deep-primary-color);
 }
 
 /* footer-section start */
 .footer {
   height: 20rem;
-  background-color: #014372;
+  background-color: var(--deep-primary-color);
   padding: 40px;
   color: #fff;
 }
@@ -346,7 +348,7 @@ body {
 }
 .footer-logo h3 {
   padding: 15px;
-  color: #1c7db2;
+  color: var(--primary-icon-colo);
 }
 .footer-logo p {
   line-height: 1.5;
@@ -356,7 +358,7 @@ body {
 }
 .footer-menu-links h4 {
   padding: 15px;
-  color: #1c7db2;
+  color: var(--primary-icon-colo);
 }
 .footer-menu-links ul li {
   list-style: none;
@@ -399,7 +401,7 @@ hr {
 }
 .polity-terms ul li a:hover,
 .footer-menu-links ul li a:hover {
-  color: #1c7db2;
+  color: var(--primary-icon-colo);
   text-decoration: underline #fff;
 }
 @media (max-width: 800px) {
